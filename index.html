@@ -3,14 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
 
     <title>[Talk] GraphQL + Apollo</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/nu.css">
+    <link rel="stylesheet" href="css/flexbox.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/color-brewer.css">
+
+    <style>
+    .rubik p, ul, li {
+      font-family: 'Rubik', sans-serif;
+    }
+    img.perfil {
+      border-radius: 50%;
+    }
+    </style>
 
     <!-- Printing and PDF exports -->
     <script>
@@ -24,21 +35,199 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
   <body>
     <div class="reveal">
       <div class="slides">
-				<p class="footer">@marinalimeira_</p>
-				<section data-background-color="#82269E">
+				<p class="footer">Bebras Team • Reunião de Aceitação</p>
+				<section data-background-color="#4caf50" class="left">
+            
+          <img class="stack" src="images/CapiCas.png" />
+          
           <h2>
-						Consumindo GraphQL + gerenciando estado</br>
-						utilizando Apollo
-					</h2>
+            Sprint 4<br />
+            <small>Aceitação</small>
+          </h2>
+          
+        </section>
+
+
+
+        <section>
+
+          <h3>Membros</h3>
+
+          <div class="rubik layout horizontal justified">
+            <div class="flex-auto">
+                <img class="stack perfil" src="images/perfis/jhk.jpg" alt="sss" />
+                <p>Jonathan Heidy<br>
+                  <small>Analista de Requisitos</small>
+                </p>
+            </div>
+            
+            <div class="flex-auto">
+              <img class="stack perfil" src="images/perfis/php.jpg" alt="sss" />
+              <p>Pedro Pereira<br>
+                <small>Gerente de Projeto</small>
+              </p>
+            </div>
+
+            <div class="flex-auto">
+                <img class="stack perfil" src="images/perfis/gabi.jpeg" alt="sss" />
+                <p>Mateus Gabi<br>
+                  <small>Scrum Master</small>
+                </p>
+            </div>
+
+            <div class="flex-auto">
+                <img class="stack perfil" src="images/perfis/brunao.jpg" alt="sss" />
+                <p>Bruno Mecca<br>
+                  <small>Gerente de Configuração</small>
+                </p>
+              </div>
+
+              <div class="flex-auto">
+                  <img class="stack perfil" src="images/perfis/vinicius.jpeg" alt="sss" />
+                  <p>Vinícus Benites<br>
+                    <small>Projetista de Arquitetura</small></p>
+                </div>
+
+          </div>
+
+        </section>
+
+
+        <section class="left">
+          <h3>Objetivos</h3>
+
+          <ul>
+            <li>Refatoração e Evolução da API</li>
+            <li>Melhorias na Segurança</li>
+          </ul>
+        </section>
+
+        <section data-background-color="#d50000">
+          <h3>Por que refatorar?</h3>
+        </section>
+
+
+        <section>
+          <h3>Estórias</h3>
+
+          <ul>
+              <li>ET1 - API do Delegado</li>
+              <li>ET2 - API do Participante</li>
+              <li>ET3 - Refatorar Login</li>
+              <li>ET4 - Retirar dependência do Firebase</li>
+              <li>ED7 - Ranking de Participantes</li>
+          </ul>
+
+          <p>Refatorar 👉 Melhorar 👉 Evoluir</p>
+        </section>
+
+
+        <section data-background-image="images/goodday.jpg">
+          <h3>Dia-a-dia</h3>
+
+          <ul>
+            <li>Reunião Diária</li>
+            <li>Pair Programming</li>
+            <li>Revisão de Código</li>
+            <li>Sem testes automatizados ainda 😥</li>
+            <li>Algumas discussões</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h1>20 dias</h1>
+          <h4>desenvolvimento</h4>
+          <h1>04 dias</h1>
+          <h3>Home Office</h3>
+        </section>
+
+
+        <section class="left" data-background-color="#ad1457">
+
+          <h4>Como aproveitamos nosso tempo</h4>
+
+          <ul>
+            <li><b>87%</b> em Desenvolvimento</li>
+            <li><b>11%</b> em Documentação</li>
+            <li><b>2%</b> em Teste</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Desenvolvimento</h3>
+        </section>
+
+        <section class="left">
+          <h3>Projetos</h3>
+
+          <ol>
+            <li>API</li>
+            <li>Competidor</li>
+            <li>Delegado</li>
+          </ol>
+        </section>
+
+        <!-- <section data-background-image="images/js-with-love.jpg"></section> -->
+
+        <section>
+          <h1>💓</h1>
+          <h2>JavaScript</h2>
+        </section>
+
+        <section>
+
+          <div class="layout horizontal justified">
+
+
+          <div class="flex-auto">
+              <img class="stack" src="images/angular-logo.png" alt="" />
+            </div>
+            
+            <div class="flex-auto">
+              <img class="stack" src="images/js-logo.png" alt="" />
+            </div>
+            
+            <div class="flex-auto">
+              <img class="stack" src="images/ts-logo.png" alt="" />
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <div class="layout horizontal justified">
+
+              <div class="flex-auto">
+                  <img class="stack" src="images/jasmine-mocha.png" alt="" />
+                </div>
+                
+                <div class="flex-auto">
+                  <img class="stack" src="images/sikuli.png" alt="" />
+                </div>
+                
+                <div class="flex-auto">
+                  <img class="stack" src="images/jestjs.png" alt="" />
+                </div>
+              </div>
+
+        </section>
+
+        <section>
+          <h3>Sprint 4</h3>
+        </section>
+
+        <section>
+          <img class="stack" src="images/pipeline.png" alt="">
         </section>
 
 				<section>
-					<h3>Marina Limeira</h3>
+					<h3>Obrigado, Marina Limeira!</h3>
 					<p>Engenheira de Software @ Nubank</p>
 					<a href="www.marinalimeira.com" class="purple-link">marinalimeira.com</a>
 				</section>
 
-				<section data-background-image="images/products.png" class="left">
+				<!-- <section data-background-image="images/products.png" class="left">
 					<h3>Cartão</h3>
 					<h3>NuConta</h3>
 					<h3>Rewards</h3>
@@ -376,9 +565,9 @@ const stateLink = withClientState({
               apollographql.com/docs/link...
             </a>
           </small>
-        </section>
+        </section> -->
 
-        <section>
+        <!-- <section>
           <h2>apollo-link-state</h2>
           <p class="purple">Se não estivéssemos utilizando GraphQL, não utilizaríamos</br> o <em>apollo-link-state.</em></p>
         </section>
@@ -386,7 +575,7 @@ const stateLink = withClientState({
         <section data-background-color="#82269E">
           <h2>Obrigada!</h2>
           <h3><a style="color: white">sou.nu/vagasnu</a></h3>
-				</section>
+				</section> -->
 			</div>
 		</div>
 
