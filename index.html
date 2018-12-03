@@ -36,12 +36,12 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     <div class="reveal">
       <div class="slides">
 				<!-- <p class="footer">Bebras Team • Reunião de Aceitação</p> -->
-				<section data-background-color="#4caf50" class="left">
+				<section data-background-color="#ad1457" class="left">
             
           <img class="stack" src="images/CapiCas.png" />
           
           <h2>
-            Sprint 4<br />
+            Sprint 5<br />
             <small>Aceitação</small>
           </h2>
           
@@ -97,100 +97,125 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
           <h3>Objetivos</h3>
 
           <ul>
-            <li>Refatoração e Evolução da API</li>
-            <li>Melhorias na Segurança</li>
+            <li>Desenvolvimento do Subsistema do Comitê Nacional</li>
+            <li>Verificação e Teste</li>
           </ul>
         </section>
-
-        <section data-background-color="#d50000">
-          <h3>Por que refatorar?</h3>
-        </section>
-
 
         <section>
           <h3>Estórias</h3>
 
           <ul>
-              <li>ET1 - API do Delegado</li>
-              <li>ET2 - API do Participante</li>
-              <li>ET3 - Refatorar Login</li>
-              <li>ET4 - Retirar dependência do Firebase</li>
-              <li>ED7 - Ranking de Participantes</li>
+              <li>ECN7 - Acesso ao Sistema</li>
+              <li>ECN3 - Cadastrar Questões</li>
+              <li>EP4 - Questões Animadas</li>
+              <li>ECN2 - Cadastrar Questões Animadas</li>
+              <li>ECN9 - Listar Questões</li>
+              <li>ECN11 - Visualizar Questão</li>
+              <li>ECN10 - Remover Questão</li>
+              <li>ECN6 - Aprovar cadastro de Delegado</li>
           </ul>
 
-          <p>Refatorar 👉 Melhorar 👉 Evoluir</p>
+          <p>Melhorar 👉 Evoluir</p>
         </section>
 
         <section class="left">
-          <h3>ET1 - API Delegado</h3>
+          <h3>ECN7  - Acesso ao Sistema</h3>
 
-          <p><b>Como</b> desenvolvedor<br />
-              <b>Quero</b> refatorar a API em uma linguagem comum para a equipe responsável pelo projeto<br />
-              <b>A fim de</b> ter facilidade para evoluir o módulo do Bebras dedicado ao delegado.
+          <p><b>Como</b> representante do comitê nacional<br />
+              <b>Quero</b> ter acesso ao sistema<br />
+              <b>A fim de</b> cadastrar novos delegados, cadastrar novas edições, visualizar desafios e visualizar participantes.
               </p>
         </section>
 
         <section class="left">
-          <h3>ET2 - API do Participante</h3>
+          <h3>ECN3 - Cadastrar Questões</h3>
 
-          <p><b>Como</b> desenvolvedor<br />
-              <b>Quero</b> efatorar a API em uma linguagem comum para a equipe responsável pelo projeto<br />
-              <b>A fim de</b> ter facilidade para evoluir o módulo do Bebras dedicado ao participante.
+          <p><b>Como</b> comitê nacional<br />
+              <b>Quero</b> cadastrar questões de múltipla escolha no banco de questões, seguindo os padrões impostos pelo comitê internacional do bebras<br />
+              <b>A fim de</b> aplicá-las nos dias de desafio.
               </p>
         </section>
 
         <section class="left">
-          <h3>ET3 - Refatorar Login</h3>
+          <h3>EP4 - Questões Animadas</h3>
 
-          <p><b>Como</b> desenvolvedor<br />
-              <b>Quero</b> melhorar a qualidade da segurança das páginas<br />
-              <b>A fim de</b> diminuir riscos de confiabilidade e fidelidade do login.
+          <p><b>Como</b> participante<br />
+              <b>Quero</b> acessar o desafio e ser apresentado uma questão animada<br />
+              <b>A fim de</b> entender melhor o problema proposto na questão e resolver a mesma.
               </p>
         </section>
 
         <section class="left">
-          <h3>ET4 - Retirar dependência do Firebase</h3>
+          <h3>ECN2 - Cadastrar Questões Animadas</h3>
 
-          <p><b>Como</b> desenvolvedor<br />
-              <b>Quero</b> retirar a comunicação ao Firebase<br />
-              <b>A fim de</b> diminuir as dependências e a necessidade de haver internet para a aplicação da prova.
+          <p><b>Como</b> comitê nacional<br />
+              <b>Quero</b> cadastrar questões animadas no banco de questões, seguindo os padrões impostos pelo comitê internacional do bebras<br />
+              <b>A fim de</b> aplicá-las nos dias de desafio
               </p>
         </section>
 
         <section class="left">
-          <h3>ED7 - Ranking de Participantes</h3>
+          <h3>ECN9 - Listar Questões</h3>
 
-          <p><b>Como</b> desenvolvedor<br />
-              <b>Quero</b> ao término do desafio, verificar a classificação dos estudantes no desafio,assim como suas notas e respostas<br />
-              <b>A fim de</b> identificar os vencedores do desafio.
+          <p><b>Como</b> comitê nacional<br />
+              <b>Quero</b> listar as questões cadastradas no banco de questões<br />
+              <b>A fim de</b> verificar as questões que serão aplicadas na prova.
               </p>
         </section>
 
-        <section data-background-image="images/goodday.jpg">
+        <section class="left">
+          <h3>ECN11 - Visualizar Questões</h3>
+
+          <p><b>Como</b> comitê nacional<br />
+              <b>Quero</b> lvisualizar a especificação de uma questão cadastrada no banco de questões<br />
+              <b>A fim de</b> verificar inconsistências na descrição questão.
+              </p>
+        </section>
+
+        <section class="left">
+          <h3>ECN10 - Remover Questões</h3>
+
+          <p><b>Como</b> comitê nacional<br />
+              <b>Quero</b> remover questões cadastradas no banco de questões<br />
+              <b>A fim de</b> retirar questões antigas.
+              </p>
+        </section>
+
+        <section class="left">
+          <h3>ECN6 - Aprovar cadastro de Delegado</h3>
+
+          <p><b>Como</b> comitê nacional<br />
+              <b>Quero</b> ter acesso ao cadastro dos representantes de instituições de ensino<br />
+              <b>A fim de</b> verificar a veracidade dos dados cadastrados e permitir ou não a participação do mesmo.
+              </p>
+        </section>
+
+        <section data-background-image="imaees/goodday.jpg">
           <div style="background:#fff9;width: -moz-fit-content;padding: 1em;border-radius: 5px;">
               <h3>Dia-a-dia</h3>
 
               <ul>
-                <li>Reunião Diária</li>
+                <li>Daily Meeting</li>
                 <li>Pair Programming</li>
-                <li>Revisão de Código</li>
-                <li>Sem testes automatizados ainda 😥</li>
+                <li>Code Review</li>
+                <li>Implementação de testes automatizados 👏 🎊 🎉</li>
                 <li>Algumas discussões</li>
               </ul>
           </div>
         </section>
 
 
-        <section>
+        <!-- <section>
           <h1 style="font-size: 70px;text-transform: uppercase;font-weight: bolder;">18 dias</h1>
           <h4>desenvolvimento</h4>
           <h1>04 dias</h1>
           <h3 style="font-size: 38px;text-transform: uppercase;font-weight: bolder;">Home Office</h3>
           <p style="font-size: 51px;text-transform: uppercase;font-weight: bolder;">64 Issues</p>
-        </section>
+        </section> -->
 
 
-        <section class="left" data-background-color="#ad1457">
+        <!-- <section class="left" data-background-color="#ad1457">
 
           <h4>Como aproveitamos nosso tempo</h4>
 
@@ -200,8 +225,8 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             <li><b>2%</b> em Teste</li>
           </ul>
         </section>
-
-        <section>
+ -->
+            <section data-background-color="#757575">
           <h3>Desenvolvimento</h3>
         </section>
 
@@ -209,9 +234,10 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
           <h3>Projetos</h3>
 
           <ol>
-            <li>API</li>
+            <li>Serviço</li>
             <li>Competidor</li>
             <li>Delegado</li>
+            <li><b>Comitê Nacional</b></li>
           </ol>
         </section>
 
@@ -265,33 +291,174 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                 <div class="flex-auto">
                   <img class="stack" src="images/sikuli.png" alt="" />
                 </div>
-                
+
+              </div>
+
+          <div class="layout horizontal justified">              
                 <div class="flex-auto">
                   <img class="stack" src="images/jestjs.png" alt="" />
+                </div>
+
+                <div class="flex-auto">
+                  <img class="stack" src="images/ts-lint.png" alt="" />
+                </div>
+
+                <div class="flex-auto">
+                  <img class="stack" src="images/eslint.png" alt="" />
                 </div>
               </div>
 
         </section>
 
-        <section data-background-color="#757575">
-          <h3>Sprint 5</h3>
-
-          <ul>
-            <li>Aplicação do Comitê Nacional</li>
-            <li>Sistema de Monitaramento de Rede</li>
-            <li>Sistema de Logs</li>
-            <li><b>Primeiro Teste na FACOM!</b></li>
-          </ul>
+        <section data-background-color="#d50000">
+          <h3>Análise Estática</h3>
         </section>
 
         <section>
-          <img class="stack" src="images/pipeline.png" alt="">
+          <h4>Comitê Nacional</h4>
+          <ul>
+            <li><b>258</b> defeitos foram encontrados distribuı́dos</li>
+            <li><b>13</b> regras distintas</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <!-- <h4>Comitê Nacional</h4> -->
+
+          <table>
+            <tr>
+              <th>Regra</th>
+              <th>Quantidade</th>
+              <th>Porcentagem</th>
+            </tr>
+            <tr>
+              <td>”should be ’</td>
+              <td>127</td>
+              <td>50%</td>  
+            </tr>
+            <tr>
+              <td>Missing semicolon</td>
+              <td>38</td>
+              <td>15%</td>  
+            </tr>
+            <tr>
+              <td>comment must start with a space</td>
+              <td>33</td>
+              <td>13%</td>  
+            </tr>
+            <tr>
+              <td>missing whitespace</td>
+              <td>21</td>
+              <td>9%</td> 
+            </tr>
+            <tr>
+              <td>trailing whitespace</td>
+              <td>9</td>            
+              <td>4%</td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h4>Delegado</h4>
+          <ul>
+            <li><b>923</b> defeitos foram encontrados distribuı́dos</li>
+            <li><b>25</b> regras distintas</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <!-- <h4>Delegado</h4> -->
+
+          <table>
+            <tr>
+              <th>Regra</th>
+              <th>Quantidade</th>
+              <th>Porcentagem</th>
+            </tr>
+            <tr>
+              <td>Missing semicolon</td>
+              <td>370</td>
+              <td>41%</td>  
+            </tr>
+            <tr>
+              <td>”should be ’</td>
+              <td>150</td>
+              <td>17%</td>  
+            </tr>
+            <tr>
+              <td>missing whitespace</td>
+              <td>95</td>
+              <td>11%</td> 
+            </tr>
+            <tr>
+              <td>comment must start with a space</td>
+              <td>87</td>
+              <td>10%</td>  
+            </tr>
+            <tr>
+              <td>trailing whitespace</td>
+              <td>48</td>            
+              <td>6%</td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h4>Comitê Nacional</h4>
+          <ul>
+            <li><b>258</b> defeitos foram encontrados distribuı́dos</li>
+            <li><b>13</b> regras distintas</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <!-- <h4>Competidor</h4> -->
+
+          <table>
+            <tr>
+              <th>Regra</th>
+              <th>Quantidade</th>
+              <th>Porcentagem</th>
+            </tr>
+            <tr>
+              <td>Missing semicolon</td>
+              <td>137</td>
+              <td>53%</td>  
+            </tr>
+            <tr>
+              <td>”should be ’</td>
+              <td>48</td>
+              <td>19%</td>  
+            </tr>
+            <tr>
+              <td>trailing whitespace</td>
+              <td>14</td>            
+              <td>6%</td>
+            </tr>
+            <tr>
+              <td>use ’const’ instead of ’var’</td>
+              <td>7</td>
+              <td>3%</td>  
+            </tr>
+            <tr>
+              <td>file should end with a newline</td>
+              <td>7</td>
+              <td>3%</td> 
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h4>Serviço</h4>
+          <p>Nenhum erro foi detectado</p>
         </section>
 
 				<section data-background-color="#313443">
-          <iframe src="https://giphy.com/embed/3oEdva9BUHPIs2SkGk" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-					<!-- <h3>Obrigado!</h3> -->
-          <!-- <a href="www.marinalimeira.com" class="purple-link">marinalimeira.com</a> -->
+          <h1>Obrigado</h1>
 				</section>
 
 				<!-- <section data-background-image="images/products.png" class="left">
